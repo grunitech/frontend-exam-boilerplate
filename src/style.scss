@@ -11,3 +11,35 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+ background-color: aqua;
+ border: 1px solid #333;
+
+}
+
+
+
+li{
+  background-color: rgb(59, 214, 165);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+li:nth-child(even) {
+  background-color: aqua;
+}
+
+#triangle {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgb(88, 87, 87);
+}
