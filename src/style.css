@@ -3,7 +3,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -12,19 +11,14 @@
 }
 
 form {
-
   border: 2px solid blue;
   padding: 3px;
-  
-  div {
-
-    border: 2px solid purple;
-  }
+}
+form div {
+  border: 2px solid purple;
 }
 
 body {
-
   display: flex;
   justify-content: center;
-}
-
+}/*# sourceMappingURL=style.css.map */
