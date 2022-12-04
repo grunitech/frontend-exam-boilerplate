@@ -36,4 +36,16 @@ table {
 table th {
   background-color: purple;
   color: white;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
