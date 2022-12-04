@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/smiley-icon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GRUnitech WebDev Exam</title>
-  </head>
-  <body>
-    <div>hello world</div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/smiley-icon.svg" />
+		<meta name="q1viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GRUnitech WebDev Exam</title>
+	</head>
+	<body>
+		<h1>Currency Converter</h1>
+
+		<section class="currency_converter_form-container">
+			<form id="currency-converter-form" action="">
+				<div class="currency_converter_form-currency_selector-container">
+					<label for="currency-select"
+						>Currency<select id="currency-select" name="currency"></select
+					></label>
+				</div>
+				<div class="currency_converter_form-exchange_date">
+					<label for="exchange-date">exchange date</label>
+					<input type="date" value="2021-10-01"  id="date-input"  />
+				</div>
+				<input type="submit" value="submit" class="submit"/>
+				<div class="result">Exchange Rate to ILS: <span id="exchangeResult">3.452</span></div>
+			</form>
+		</section>
+
+		<section class="currency-converter-table">
+			<table>
+				<thead>
+					<tr>
+						<th>date</th>
+						<th>currency</th>
+						<th>exchange rate</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</section>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>

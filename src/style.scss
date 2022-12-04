@@ -1,13 +1,91 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
+$accent-color: darkslateblue;
+$cell-border: $accent-color 2px solid;
+$section-cell-border-radius: 4px;
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+.result {
+	position: relative;
+	padding: 20px;
+	border: $cell-border;
+	border-radius: $section-cell-border-radius;
+
+}
+
+.spinner {
+	display: inline-block;
+	position: absolute;
+	bottom: 7px;
+	margin-left: 10px;
+	&.small {
+		bottom: 2px;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+table {
+	border: #1976d2 2px solid;
+	border-radius: $section-cell-border-radius;
+	margin: auto;
+	width: 304px;
+  margin-top: 30px;
+	thead,
+	tfoot {
+		background-color: $accent-color;
+		color: #fff;
+	}
+
+	tr {
+		position: relative;
+	}
+}
+
+
+#currency-converter-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border : 2px solid blue ;
+  padding: 20px;
+  border-radius: 4px;
+  & div {
+    padding: 20px 0 0 20px;
+  }
+  & .submit {
+    width : 50px;  
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+  row-gap: 10px;
+}
