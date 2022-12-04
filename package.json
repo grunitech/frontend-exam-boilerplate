@@ -12,5 +12,17 @@
     "sass": "^1.56.1",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
-  }
+  },
+  "description": "Welcome! This is a boilerplate for creating web applications using TypeScript and Sass.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ran-E/frontend-exam-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ran-E/frontend-exam-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Ran-E/frontend-exam-boilerplate#readme"
 }
