@@ -3,7 +3,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -12,18 +11,14 @@
 }
 
 form {
-
   border: 2px solid blue;
   padding: 3px;
-  
-  div {
-
-    border: 2px solid purple;
-  }
+}
+form div {
+  border: 2px solid purple;
 }
 
 body {
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -31,41 +26,33 @@ body {
 }
 
 html {
-
   height: 100%;
 }
 
 table {
-
   border: 2px solid blue;
   margin-top: 10px;
   margin-bottom: 4px;
-
-  th {
-
-    background-color: purple;
-    color: white;
-  }
+}
+table th {
+  background-color: purple;
+  color: white;
 }
 
 label {
-
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
 #submit {
-
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
 #mDiv {
-
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 2px;
-}
-
+}/*# sourceMappingURL=style.css.map */

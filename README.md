@@ -57,6 +57,8 @@ You can change the name of the project, the version and other configuration in `
 Follow git instructions and best practices to commit your work in branches and push it to GitHub.
 This project comes with a `.gitignore` file which you can modify if needed.
 
+end
+
  
  
  
