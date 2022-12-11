@@ -9,5 +9,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
+}
+li{
+  background-color:aqua;
+  &:nth-child(odd){
+  background-color:aquamarine;
+}
+
+}
+
+.isInParagraph::before {
+  content: "";
+  display: inline-block;
+  text-indent:5px;
+  width: 0; 
+  height: 0; 
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid rgb(128, 0, 0);
+  opacity: 60%;
+  margin-top: 5px;
+
 }
 
