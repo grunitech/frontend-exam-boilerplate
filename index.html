@@ -1,22 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/smiley-icon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/smiley-icon.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+</head>
+<body>
+<div id="app"></div>
+<h1>Currency Exchange Graphs</h1>
+
+<section class="currency-in-week-form-section">
+  <form id="currency-in-week-form" action="">
     
-    <title>Hagar Laks Exam</title>
-  </head>
-  <body>
-    <h1>Hagar</h1>
+    <fieldset>
+      <legend>Choose the currencies to display:</legend>
+    
+      <ul id="currenciesCheckboxes">
+        <li>
+          <input type="checkbox" name="currencies">
+          <label for="USD">'USD (United States Dollar)'</label>
+        </li>
+        <li>
+          <input type="checkbox" name="currencies">
+          <label for="EUR">'EUR (Euro)',
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="currencies">
+          <label for="GBP">'GBP (Great Britain Pound)'</label>
+        </li>
+        <li>
+          <input type="checkbox" name="currencies">
+          <label for="CAD">'CAD (Canadian Dollar)'</label>
+        </li>
+        <li>
+          <input type="checkbox" name="currencies">
+          <label for="AUD">'AUD (Australian Dollar)'</label>
+        </li>
+        <li>
+          <input type="checkbox" name="currencies">
+          <label for="GPY">'GPY (Japanese Yen)'</label>
+        </li>
+      </ul>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Choose the week to display:</legend>
+      <input type="number"  min="1" max="52">
+      <input type="number"  min="2000" max="2099" value="2021">     
+    </fieldset>
+    <button>submit</button>
+  
+  </form>
+</section>
+
+<section id="graphs-section">
+  
+  <div class="graph-container">
+    <div class="graph-title">USD - Week 4, 2021</div>
+    <div class="graph" id="graph">
       
+      <div class="bar">3.45</div>
+      <div class="bar">5.68</div>
+      <div class="bar">4.35</div>
+      <div class="bar">8.5</div>
+      <div class="bar">7.55</div>
+    
+    </div>
+    
+    <div>
+      <span class="bar-label">Mon</span><span class="bar-label">Tue</span><span class="bar-label">Wed</span><span
+      class="bar-label">Thu</span><span class="bar-label">Fri</span>
+    </div>
+  </div>
 
-      
+</section>
 
 
-
-
-                
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>
